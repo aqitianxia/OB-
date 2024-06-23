@@ -1,0 +1,8 @@
+```dataviewjs
+dv.span("![](https://files.getquicker.net/_sitefiles/kb/sharedaction/cfb52022-3dfe-42e6-ce7d-08db0198d031/2023/01/30/172631_478204_200.gif)")
+var 变量 = dv.current().file.folder
+dv.paragraph('<font color=#666600><center><sub>📁所在文件夹的所有文件</sub></font><center>')
+dv.span("<sub>"+dv.pages(`"${变量}"`).where(f=>!f.file.name.includes('过滤的文件名')).sort(k =>k.file.name,'asc').file.link.join("<font color=#DDDDDD> | </font> "))
+dv.span("<br><br>")
+dv.span("![](https://files.getquicker.net/_sitefiles/kb/sharedaction/cfb52022-3dfe-42e6-ce7d-08db0198d031/2023/01/30/172631_478204_200.gif)")
+```
